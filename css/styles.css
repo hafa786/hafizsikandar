@@ -25,6 +25,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #bd5d38;
+  --bs-primary-green: #082d1c;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -209,7 +210,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: var(--bs-primary-green);
   text-decoration: underline;
 }
 a:hover {
@@ -543,6 +544,12 @@ progress {
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
+}
+.skills-img {
+  width: 48px;
+}
+.skills-img-long {
+  width: 64px;
 }
 
 .initialism {
@@ -7353,7 +7360,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #bd5d38 !important;
+  color: var(--bs-primary-green) !important;
 }
 
 .text-secondary {
@@ -7409,7 +7416,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: var(--bs-primary-green) !important;
 }
 
 .bg-secondary {
