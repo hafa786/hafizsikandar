@@ -173,28 +173,8 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section style={{
-      minHeight: '100vh', display: 'flex', flexDirection: 'column',
-      justifyContent: 'center', padding: '0 2.5rem',
-      position: 'relative', overflow: 'hidden',
-    }}>
-      {/* grid background */}
-      <div style={{
-        position: 'absolute', inset: 0, zIndex: 0,
-        backgroundImage: `
-          linear-gradient(rgba(0,255,224,0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0,255,224,0.04) 1px, transparent 1px)`,
-        backgroundSize: '60px 60px',
-      }} />
-      {/* glow blob */}
-      <div style={{
-        position: 'absolute', top: '20%', right: '10%',
-        width: '420px', height: '420px',
-        background: 'radial-gradient(circle, rgba(0,255,224,0.12) 0%, transparent 70%)',
-        borderRadius: '50%', filter: 'blur(40px)', zIndex: 0,
-      }} />
-
-      <div style={{ position: 'relative', zIndex: 1, maxWidth: '780px' }}>
+    <section style={{ padding: '7rem 2.5rem 0rem', position: 'relative' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
         <p style={{ fontFamily: 'Space Mono', fontSize: '0.8rem', color: '#00ffe0', letterSpacing: '0.2em', marginBottom: '1.2rem' }}>
           {'>'} AVAILABLE FOR OPPORTUNITIES
         </p>
@@ -212,7 +192,7 @@ const Hero: React.FC = () => {
           {typed}<span style={{ animation: 'blink 1s step-end infinite', color: '#00ffe0' }}>|</span>
         </p>
         <p style={{ fontFamily: 'Syne', fontSize: '1rem', color: '#666688', marginTop: '1.5rem', maxWidth: '540px', lineHeight: 1.7 }}>
-          7+ years building production-grade software across Finland & beyond.
+          9+ years building production-grade software across Finland & beyond.
           Currently specialising in <span style={{ color: '#00ffe0' }}>Generative AI</span>, LLM integration, and AI agent systems.
         </p>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '2.5rem', flexWrap: 'wrap' }}>
@@ -245,9 +225,10 @@ const Hero: React.FC = () => {
             onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
           >LINKEDIN</a>
         </div>
-        <p style={{ fontFamily: 'Space Mono', fontSize: '0.7rem', color: '#444466', marginTop: '2rem', letterSpacing: '0.1em' }}>
+        <p style={{ fontFamily: 'Space Mono', fontSize: '0.7rem', color: '#00FFE0', marginTop: '2rem', letterSpacing: '0.1em' }}>
           📍 Vantaa, Finland &nbsp;|&nbsp; (+358) 442467713 &nbsp;|&nbsp; hafizm.shehzad@gmail.com
         </p>
+        <img src="/map.png" alt="map" className="profile-image" style={{ margin: '1rem', width: '90%' }} />
       </div>
     </section>
   );
@@ -265,7 +246,7 @@ const AISection: React.FC = () => {
   ];
 
   return (
-    <section id="ai" style={{ padding: '7rem 2.5rem', position: 'relative' }}>
+    <section id="ai" style={{ padding: '3rem 2.5rem', position: 'relative' }}>
       <div style={{
         position: 'absolute', left: '-10%', top: '30%',
         width: '500px', height: '500px',
