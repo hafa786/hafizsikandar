@@ -20,7 +20,7 @@ interface SkillGroup {
 // ── Data ───────────────────────────────────────────────────────────────────
 const JOBS: Job[] = [
   {
-    title: 'Senior Software Consultant',
+    title: 'Lead Software Consultant',
     company: 'Hassean Health Ltd.',
     period: 'Sep 2025 – Present',
     location: 'London, UK (Remote)',
@@ -31,6 +31,7 @@ const JOBS: Job[] = [
       'Built MCP (Model Context Protocol) pipelines for multi-agent orchestration',
       'Infrastructure setup: CI/CD pipelines, Docker, AWS EC2/ALB/S3/ECR',
       'Audit logging with CloudTrail + CloudWatch for compliance',
+      'taking ownership of the entire AI system architecture and deployment',
     ],
     stack: ['Claude LLM', 'Elevenlabs LLM', 'AI Agents', 'MCP', 'Python', 'NextJs', 'TypeScript', 'Docker', 'AWS'],
   },
@@ -239,7 +240,7 @@ const AISection: React.FC = () => {
   const techItems = [
     { icon: '🤖', title: 'LLM Integration', desc: 'Integrated Claude LLM and Elevenlabs LLM into production health AI systems with real-time inference pipelines.' },
     { icon: '🧠', title: 'AI Agent Design', desc: 'Built and trained multi-agent systems using MCP (Model Context Protocol) for orchestrated task execution.' },
-    { icon: '🏥', title: 'Health AI', desc: 'Developed an Intelligent Health Assistant System combining voice AI, LLMs, and clinical data workflows.' },
+    { icon: '🏥', title: 'HealthCare AI', desc: 'Developed an Intelligent Health Assistant System combining voice AI, LLMs, and clinical data workflows.' },
     { icon: '🔬', title: 'Genomic AI', desc: 'Developed AI agents at Helsinki University\'s FIMM for FinnGen genomic data analysis at scale.' },
     { icon: '⚙️', title: 'AI Infrastructure', desc: 'End-to-end AI deployment on AWS: ECR, EC2, ALB, CloudTrail audit logging, secret management.' },
     { icon: '🔗', title: 'MCP Pipelines', desc: 'Implemented Model Context Protocol pipelines enabling structured, reliable multi-step agent workflows.' },
@@ -351,21 +352,21 @@ const ExperienceSection: React.FC = () => {
                   <h3 style={{ fontFamily: 'Syne', fontWeight: 700, fontSize: '1.05rem', color: job.highlight ? '#00ffe0' : '#d0d0f0', margin: 0 }}>
                     {job.title}
                   </h3>
-                  <span style={{ fontFamily: 'Space Mono', fontSize: '0.7rem', color: '#555577' }}>{job.period}</span>
+                  <span style={{ fontFamily: 'Space Mono', fontSize: '0.7rem', color: '#00ffe0' }}>{job.period}</span>
                 </div>
                 <p style={{ fontFamily: 'Space Mono', fontSize: '0.72rem', color: '#8888aa', margin: '0 0 1.1rem', letterSpacing: '0.05em' }}>
                   {job.company} &nbsp;·&nbsp; {job.location}
                 </p>
                 <ul style={{ margin: '0 0 1.2rem', paddingLeft: '1.2rem' }}>
                   {job.bullets.map((b, j) => (
-                    <li key={j} style={{ fontFamily: 'Syne', fontSize: '0.88rem', color: '#7777aa', lineHeight: 1.7, marginBottom: '0.3rem' }}>{b}</li>
+                    <li key={j} style={{ fontFamily: 'Syne', fontSize: '0.90rem', color: '#fff', lineHeight: 1.7, marginBottom: '0.3rem' }}>{b}</li>
                   ))}
                 </ul>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                   {job.stack.map((s, j) => (
                     <span key={j} style={{
-                      fontFamily: 'Space Mono', fontSize: '0.65rem', padding: '0.25rem 0.6rem',
-                      background: 'rgba(255,255,255,0.04)', color: '#6666aa',
+                      fontFamily: 'Space Mono', fontSize: '0.70rem', padding: '0.25rem 0.6rem',
+                      background: 'rgba(255,255,255,0.04)', color: '#00ffe0',
                       border: '1px solid rgba(255,255,255,0.06)',
                     }}>{s}</span>
                   ))}
@@ -454,7 +455,7 @@ const SkillsSection: React.FC = () => {
             {[
               { lang: 'Urdu', level: 'Native' },
               { lang: 'English', level: 'B2 Professional' },
-              { lang: 'Finnish', level: 'A2 Basic' },
+              { lang: 'Finnish', level: 'B1 Basic' },
             ].map(({ lang, level }) => (
               <div key={lang} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.6rem' }}>
                 <span style={{ fontFamily: 'Syne', fontSize: '0.88rem', color: '#9999bb' }}>{lang}</span>
