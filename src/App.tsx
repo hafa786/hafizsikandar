@@ -259,7 +259,7 @@ const AISection: React.FC = () => {
           {'>'} SPECIALISATION
         </p>
         <h2 style={{ fontFamily: 'Syne', fontWeight: 800, fontSize: 'clamp(2rem, 4vw, 3.2rem)', color: '#f0f0ff', margin: '0 0 1rem' }}>
-          AI & Generative <span style={{ color: '#00ffe0' }}>Intelligence</span>
+          HealthCare & Generative <span style={{ color: '#00ffe0' }}>AI</span>
         </h2>
         <p style={{ fontFamily: 'Syne', color: '#666688', fontSize: '1rem', marginBottom: '3.5rem', maxWidth: '560px', lineHeight: 1.7 }}>
           Building intelligent systems at the intersection of LLMs, multi-agent architectures, and real-world production infrastructure.
@@ -483,7 +483,7 @@ const ContactSection: React.FC = () => {
         <h2 style={{ fontFamily: 'Syne', fontWeight: 800, fontSize: 'clamp(2rem, 4vw, 3.2rem)', color: '#f0f0ff', margin: '0 0 1.2rem' }}>
           Let's <span style={{ color: '#00ffe0' }}>Build</span> Together
         </h2>
-        <p style={{ fontFamily: 'Syne', fontSize: '1rem', color: '#666688', lineHeight: 1.7, marginBottom: '2.5rem' }}>
+        <p style={{ fontFamily: 'Syne', fontSize: '1rem', color: '#fff', lineHeight: 1.7, marginBottom: '2.5rem' }}>
           Open to software engineering roles, AI consulting, and interesting projects — especially at the frontier of generative AI.
         </p>
         <a href="mailto:hafizm.shehzad@gmail.com" style={{
@@ -514,7 +514,7 @@ const ContactSection: React.FC = () => {
           ))}
         </div>
 
-        <p style={{ fontFamily: 'Space Mono', fontSize: '0.65rem', color: '#333355', marginTop: '4rem', letterSpacing: '0.1em' }}>
+        <p style={{ fontFamily: 'Space Mono', fontSize: '0.65rem', color: '#00ffe0', marginTop: '4rem', letterSpacing: '0.1em' }}>
           "Failure is not an end state, it is just a decision point."
         </p>
       </div>
